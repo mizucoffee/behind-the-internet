@@ -1,0 +1,116 @@
+/* ===== Common ===== */
+
+:root {
+  --blue: #4FC0F4;
+  --white: #ffffff;
+  --yellow: #FFFF99;
+  --gray: #333333;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.blue-bg {
+  background-color: var(--blue);
+}
+
+.blue-bg * {
+  color: var(--white);
+}
+
+.yellow-bg {
+  background-color: var(--yello);
+}
+
+.yellow-bg * {
+  color: var(--gray);
+}
+
+.heading {
+  text-align: center;
+  padding: 64px;
+}
+
+.heading span {
+  font-size: 24pt;
+}
+
+.heading h2 {
+  font-size: 32pt;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.stripe {
+  background-image: url(img/stripe.png);
+  background-size: 32px;
+}
+
+.h-box {
+
+}
+.h-box h3 {
+
+}
+.h-box .content {
+  max-width: 1080px;
+  min-height: 480px;
+  background-color: #ffffff;
+  border: solid 6px var(--gray);
+  filter: drop-shadow(10px 10px 0px var(--gray));
+  margin: auto;
+}
+
+/* ===== Common ===== */
+
+/* ===== Header ===== */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+header > img {
+  position: absolute;
+}
+
+header > .cloud1 {
+  top: -5vh;
+  right: 0px;
+  width: 50vmax;
+}
+
+header > .cloud2 {
+  bottom: -5vh;
+  transform: rotate(180deg);
+  left: 0px;
+  width: 50vmax;
+}
+
+header .box {
+  border: solid 4px white;
+  width: calc(100vw - 128px);
+  height: calc(100vh - 128px);
+  border-radius: 48px
+}
+
+/* ===== Header ===== */
+
+/* ===== Section 1 ===== */
+
+.section1 {
+}
+
+/* ===== Section 1 ===== */
