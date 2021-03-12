@@ -24,7 +24,7 @@
 }
 
 .yellow-bg {
-  background-color: var(--yello);
+  background-color: var(--yellow);
 }
 
 .yellow-bg * {
@@ -49,8 +49,14 @@
 /*  width: 100vw;*/
 }
 
-.stripe {
+.blue-bg .stripe {
   background-image: url(img/stripe.png);
+  background-size: 32px;
+}
+
+.yellow-bg .stripe {
+  background-color: var(--yellow);
+  background-image: url(img/stripe-40.png);
   background-size: 32px;
 }
 
@@ -110,6 +116,43 @@
   font-size: 24pt;
 }
 
+.s-box {
+  width: 1080px;
+  height: 680px;
+  position: relative;
+}
+
+.s-box .content {
+  width: calc(100% - 48px * 2 - 6px * 2);
+  height: calc(100% - 48px * 2 - 6px * 2);
+  background-color: var(--white);
+  border: solid 6px var(--gray);
+  filter: drop-shadow(10px 10px 0px var(--gray));
+  margin: auto;
+  padding: 48px;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.s-box .content p {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--gray);
+  font-size: 24pt;
+  margin: 64px 0px;
+  line-height: 42pt;
+}
+
+.s-box .content p span {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
+  color: var(--white);
+  font-size: 36pt;
+  display: inline-block;
+  margin: 0px 8px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--gray);
+}
+
 /* ===== Common ===== */
 
 /* ===== Header ===== */
@@ -120,6 +163,7 @@ header {
   align-items: center;
   height: 100vh;
 /*  width: 100vw;*/
+  position: relative;
   overflow: hidden;
 }
 
@@ -134,7 +178,7 @@ header > .cloud1 {
 }
 
 header > .cloud2 {
-  bottom: -5vh;
+  bottom: -9vh;
   transform: rotate(180deg);
   left: 0px;
   width: 50vmax;

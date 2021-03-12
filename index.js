@@ -1,9 +1,8 @@
 const debug = false;
 
-pinPage('.anim-1', '70%')
-
-show('#pop1', ".anim-1-content", "60%", "70%")
-show('#pop2', ".anim-1-content", "90%", "100%")
+pinPage('.anim-1', '90%')
+show('#pop1', ".anim-1-content", "60%", "80%")
+show('#pop2', ".anim-1-content", "100%", "120%")
 
 function pinPage(target, size) {
   gsap.to(target, {
