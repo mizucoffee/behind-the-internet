@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Behind the internet</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&family=RocknRoll+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="anime.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
   <script src="index.js" defer></script>
@@ -13,15 +16,17 @@
 
 <body>
   <header>
-    <div class="box">
-      <h1>Behind the internet</h1>
-      <p>インターネットがどうして使えるのか<br>
-        考えたことはありますか？<br>
-        今や生活の一部になりつつあるインターネット。<br>
-        何も知らなくても使えるけど、<br>
-        知っているともっと面白い。<br>
-        パソコンやスマホが何をしているのか<br>
-        少しだけ覗いて行きませんか？</p>
+    <div class="box flex">
+      <div>
+        <h1><img src="/img/logo.png" id="logo"></h1>
+        <p>インターネットがどうして使えるのか<br>
+          考えたことはありますか？<br>
+          今や生活の一部になりつつあるインターネット。<br>
+          何も知らなくても使えるけど、<br>
+          知っているともっと面白い。<br>
+          パソコンやスマホが何をしているのか<br>
+          少しだけ覗いて行きませんか？</p>
+      </div>
     </div>
     <img class="cloud1" src="img/cloud.png">
     <img class="cloud2" src="img/cloud.png">
@@ -29,12 +34,13 @@
 
   <section>
     <div class="heading">
-    <div>
-      <span>第一章</span>
-      <h2>Webサイトとサーバー</h2></div>
+      <div>
+        <span>第一章</span>
+        <h2>Webサイトとサーバー</h2>
+      </div>
     </div>
     <div class="page stripe flex">
-      <div class="h-box">
+      <div class="topic-box">
         <h3>Webサイトってなんだろう？</h3>
         <div class="content">
           <img src="img/pc-top.png" alt="">
@@ -49,9 +55,9 @@
       <div class="anim-1-content">
         <p>データを持っているパソコンに「サイトを見せてください！」<br>
           とメッセージを送るとサイトを送り返してくれるんだ。</p>
-        <div class="flex">
+        <div class="flex chat">
           <img src="img/sph.png" class="illust" id="sph1">
-          <div style="width: fit-content;">
+          <div class="pop-box">
             <img src="img/pop-1.png" class="pop" id="pop1">
             <img src="img/pop-2.png" class="pop" id="pop2">
           </div>
@@ -60,18 +66,16 @@
       </div>
     </div>
     <div class="page flex stripe">
-      <div class="s-box">
-        <div class="content flex">
-          <div>
-            <p>
-              このように、データを送り返してくれるパソコンのことを<br>
-              <span>サーバー</span>と呼ぶよ。
-            </p>
-            <p>
-              インターネットは、PCやスマホだけじゃなく<br>
-              沢山のサーバーがつながって出来ているんだ！
-            </p>
-          </div>
+      <div class="text-box flex">
+        <div>
+          <p>
+            このように、データを送り返してくれるパソコンのことを<br>
+            <strong>サーバー</strong>と呼ぶよ。
+          </p>
+          <p>
+            インターネットは、PCやスマホだけじゃなく<br>
+            沢山のサーバーがつながって出来ているんだ！
+          </p>
         </div>
       </div>
     </div>
@@ -79,29 +83,31 @@
 
   <section>
     <div class="heading">
-    <div>
-      <span>第二章</span>
-      <h2>IPアドレスとパケット</h2>
-    </div>
+      <div>
+        <span>第二章</span>
+        <h2>IPアドレスとパケット</h2>
+      </div>
     </div>
     <div class="page stripe flex">
-      <div class="h-box">
-        <h3>Webサイトってなんだろう？</h3>
-        <div class="content">
-          <p>
-            サイトを見せてください！というメッセージを<br>
-            サーバーに送るとページを見れることが分かったね。
-          </p>
-          <p>
-            でも、インターネットには沢山のサーバーがあるんだ。
-          </p>
-          <p>
-            その中から見たいサイトのサーバーにメッセージを送るのはどうしているんだろう？
-          </p>
-          <p>
-            実は、IPアドレスを使って<br>
-            どこのサーバーに送るかを決めているんだ！
-          </p>
+      <div class="topic-box">
+        <h3>どうやって宛先を決めるんだろう？</h3>
+        <div class="content flex">
+          <div>
+            <p>
+              サイトを見せてください！というメッセージを<br>
+              サーバーに送るとページを見れることが分かったね。
+            </p>
+            <p>
+              でも、インターネットには沢山のサーバーがあるんだ。
+            </p>
+            <p>
+              その中から見たいサイトのサーバーにメッセージを送るのはどうしているんだろう？
+            </p>
+            <p>
+              実は、IPアドレスを使って<br>
+              どこのサーバーに送るかを決めているんだ！
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -110,48 +116,41 @@
         <p>データを持っているパソコンに「サイトを見せてください！」<br>
           とメッセージを送るとサイトを送り返してくれるんだ。</p>
         <div class="flex">
-          <img src="img/sph.png" class="illust" id="sph1">
-          <div style="width: fit-content;">
-            <img src="img/pop-1.png" class="pop" id="pop1">
-            <img src="img/pop-2.png" class="pop" id="pop2">
-          </div>
-          <img src="img/pc.png" class="illust" id="pc1">
         </div>
       </div>
     </div>
     <div class="page flex stripe">
-      <div class="s-box">
-        <div class="content flex">
-          <div>
-            <p>
-              このように、パケットに宛先と送り主のIPアドレスを書く事で<br>
-              スムーズにやり取りをすることが出来るんだね。
-            </p>
-          </div>
-        </div>
+      <div class="text-box flex">
+        <p>
+          このように、パケットに宛先と送り主のIPアドレスを書く事で<br>
+          スムーズにやり取りをすることが出来るんだね。
+        </p>
       </div>
     </div>
   </section>
 
   <section>
     <div class="heading">
-     <div>
-      <span>第三章</span>
-       <h2>IPアドレスとドメイン</h2></div>
+      <div>
+        <span>第三章</span>
+        <h2>IPアドレスとドメイン</h2>
+      </div>
     </div>
     <div class="page stripe flex">
-      <div class="h-box">
+      <div class="topic-box">
         <h3>IPアドレスは普段隠れている！</h3>
-        <div class="content">
-          <p>
-            パソコンはIPアドレスを使ってやり取りを<br>
-            していることが分かったけど、<br>
-            そういえばIPアドレスって普段見ないよね。
-          </p>
-          <p>
-            実は、サーバーの場所を表すのには
-            <span>ドメイン</span>を使っているんだ！
-          </p>
+        <div class="content flex">
+          <div>
+            <p>
+              パソコンはIPアドレスを使ってやり取りを<br>
+              していることが分かったけど、<br>
+              そういえばIPアドレスって普段見ないよね。
+            </p>
+            <p>
+              実は、サーバーの場所を表すのには
+              <strong>ドメイン</strong>を使っているんだ！
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -176,57 +175,61 @@
         <p>データを持っているパソコンに「サイトを見せてください！」<br>
           とメッセージを送るとサイトを送り返してくれるんだ。</p>
         <div class="flex">
-          <img src="img/sph.png" class="illust" id="sph1">
-          <div style="width: fit-content;">
-            <img src="img/pop-1.png" class="pop" id="pop1">
-            <img src="img/pop-2.png" class="pop" id="pop2">
-          </div>
-          <img src="img/pc.png" class="illust" id="pc1">
         </div>
       </div>
     </div>
     <div class="page flex stripe">
-      <div class="s-box">
-        <div class="content flex">
-          <div>
-            <p>
-              このように、インターネットは複数の機能がお互いを<br>
-              支え合って動いているんだ！
-            </p>
-          </div>
-        </div>
+      <div class="text-box flex">
+        <p>
+          このように、インターネットは複数の機能がお互いを<br>
+          支え合って動いているんだ！
+        </p>
       </div>
     </div>
   </section>
-  
+
 
   <section>
     <div class="heading">
       <div>
-      <span>第四章</span>
+        <span>第四章</span>
         <h2>作者からのメッセージ</h2>
       </div>
     </div>
     <div class="onepage">
-      <div class="s-box">
-        <div class="content flex">
-          <div>
-            <p>
-              このように、インターネットは複数の機能がお互いを<br>
-              支え合って動いているんだ！
-            </p>
-          </div>
+      <div class="flex">
+        <div class="balloon">
+          <p>
+            このサイトではインターネットの基礎を解説しました。<br>
+            解説してきたような仕組みが沢山動いて<br>
+            インターネットは動き続けています。
+          </p>
+          <p>
+            これらの仕組みは全て、人が考え抜いて作り上げてきたものです。<br>
+            インターネットをただ使うのも楽しいですが、<br>
+            どんな仕組みが、どんな風に作られてきたのかを<br>
+            想像してみるのもまた楽しいはずです！
+          </p>
+          <p>
+            インターネットはまだまだ奥が深い世界です！<br>
+            ぜひ色々調べてみてくださいね。
+          </p>
+        </div>
+        <div class="portrait">
+          <img src="/img/mizu.png" class="mizu">
+          <div>ネットワークエンジニア</div>
+          <div class="name">みず @lit_mizu</div>
         </div>
       </div>
     </div>
   </section>
-  
+
   <section>
     <div class="heading">
       <div>
         <span>もっと知りたいあなたへ</span>
         <h2>おすすめ本の紹介</h2>
-     </div>
+      </div>
     </div>
     <div class="onepage flex">
       <div class="book-container">
@@ -249,7 +252,7 @@
       </div>
     </div>
   </section>
-  
+
   <footer class="flex">
     <span>&copy; 2020 <a href="http://twitter.com/lit_mizu" target="_blank">@lit_mizu</a></span>
   </footer>

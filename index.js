@@ -1,4 +1,4 @@
-const debug = false;
+const debug = true;
 
 pinPage('.anim-1', '90%')
 show('#pop1', ".anim-1-content", "60%", "80%")

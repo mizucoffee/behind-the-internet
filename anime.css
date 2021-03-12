@@ -1,0 +1,35 @@
+/* CHAT */
+
+.chat {
+  width: 100vw;
+}
+
+.chat .illust {
+  height: 30vw;
+  width: 30vw;
+  object-fit: contain;
+  object-position: right;
+  max-height: 350px;
+}
+
+.chat .pop-box {
+  width: 40vw;
+}
+
+.chat .pop {
+  width: 100%;
+  object-fit: contain;
+}
+
+.chat #pop1 {
+  margin-right: 6%;
+}
+
+.chat #pop2 {
+  margin-left: 6%;
+  margin-top: -6%;
+}
+
+p {
+  padding: 0px 16px;
+}
