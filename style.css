@@ -54,19 +54,60 @@
   background-size: 32px;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illust {
+  height: 350px;
+}
+
+.pop {
+  opacity: 0;
+  transform: translateY(64px);
+}
+
 .h-box {
-
+  width: 1080px;
+  position: relative;
 }
+
 .h-box h3 {
-
+  position: relative;
+  background-color: var(--white);
+  color: var(--gray);
+  border: solid 6px var(--gray);
+  filter: drop-shadow(4px 4px 0px var(--gray));
+  width: 70%;
+  padding: 16px;
+  margin-top: -32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32pt;
+  text-align: center;
+  top: 48px;
+  z-index: 10;
 }
+
 .h-box .content {
-  max-width: 1080px;
-  min-height: 480px;
-  background-color: #ffffff;
+  max-width: 100%;
+  min-height: 80px;
+  background-color: var(--white);
   border: solid 6px var(--gray);
   filter: drop-shadow(10px 10px 0px var(--gray));
   margin: auto;
+  padding: 48px;
+  text-align: center;
+}
+
+.h-box .content * {
+  color: var(--gray);
+}
+
+.h-box .content p {
+  font-size: 24pt;
 }
 
 /* ===== Common ===== */
@@ -114,3 +155,10 @@ header .box {
 }
 
 /* ===== Section 1 ===== */
+
+/* ===== Anim 1 ==== */
+.anim-1 p {
+  text-align: center;
+  font-size: 24pt;
+  margin: 64px 0px;
+}

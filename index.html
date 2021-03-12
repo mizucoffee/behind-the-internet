@@ -6,6 +6,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -29,10 +32,44 @@
       <span>第一章</span>
       <h2>Webサイトとサーバー</h2>
     </div>
-    <div class="page stripe">
+    <div class="page stripe flex">
       <div class="h-box">
         <h3>Webサイトってなんだろう？</h3>
-        <div class="content">content</div>
+        <div class="content">
+          <img src="img/pc-top.png" alt="">
+          <p>
+            実はWebサイトって、世界のどこかの<br>
+            パソコンの中にあるデータなんです
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="page anim-1 flex">
+      <div>
+        <p>データを持っているパソコンに「サイトを見せてください！」<br>
+          とメッセージを送るとサイトを送り返してくれるんだ。</p>
+        <div class="flex">
+
+          <img src="img/sph.png" class="illust" id="sph1">
+          <div style="width: fit-content;">
+            <img src="img/pop-1.png" class="pop" id="pop1">
+            <img src="img/pop-2.png" class="pop" id="pop2">
+          </div>
+          <img src="img/pc.png" class="illust" id="pc1">
+        </div>
+      </div>
+
+    </div>
+    <div class="page flex">
+      <div class="h-box">
+        <h3>Webサイトってなんだろう？</h3>
+        <div class="content">
+          <img src="img/pc-top.png" alt="">
+          <p>
+            実はWebサイトって、世界のどこかの<br>
+            パソコンの中にあるデータなんです
+          </p>
+        </div>
       </div>
     </div>
   </section>
