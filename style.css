@@ -15,25 +15,43 @@
   font-family: 'RocknRoll One', sans-serif;
 }
 
-.blue-bg {
+header {
   background-color: var(--blue);
 }
 
-.blue-bg * {
-  color: var(--white);
-}
-
-.yellow-bg {
+section:nth-child(odd) {
   background-color: var(--yellow);
 }
 
-.yellow-bg * {
+section:nth-child(odd) * {
   color: var(--gray);
+}
+
+section:nth-child(odd) .stripe {
+  background-color: var(--yellow);
+  background-image: url(img/stripe-40.png);
+  background-size: 32px;
+}
+
+section:nth-child(even) {
+  background-color: var(--blue);
+}
+
+section:nth-child(even) * {
+  color: var(--white);
+}
+
+section:nth-child(even) .stripe {
+  background-image: url(img/stripe.png);
+  background-size: 32px;
 }
 
 .heading {
   text-align: center;
-  padding: 64px;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading span {
@@ -41,23 +59,12 @@
 }
 
 .heading h2 {
-  font-size: 32pt;
+  font-size: 36pt;
 }
 
 .page {
   height: 100vh;
 /*  width: 100vw;*/
-}
-
-.blue-bg .stripe {
-  background-image: url(img/stripe.png);
-  background-size: 32px;
-}
-
-.yellow-bg .stripe {
-  background-color: var(--yellow);
-  background-image: url(img/stripe-40.png);
-  background-size: 32px;
 }
 
 .flex {
@@ -153,6 +160,29 @@
   -webkit-text-stroke-color: var(--gray);
 }
 
+.onepage {
+  height: calc(100vh - 256px - 128px);
+  padding-bottom: 128px;
+}
+
+.book-container {
+  margin: 0 64px;
+}
+
+.book-container img {
+  width: 300px;
+}
+
+.book-container div {
+  margin-top: 24px;
+  font-size: 14pt;
+  text-align: center;
+}
+
+.shadow10px {
+  filter: drop-shadow(10px 10px 0px var(--gray));
+}
+
 /* ===== Common ===== */
 
 /* ===== Header ===== */
@@ -193,16 +223,13 @@ header .box {
 
 /* ===== Header ===== */
 
-/* ===== Section 1 ===== */
-
-.section1 {
-}
-
-/* ===== Section 1 ===== */
-
 /* ===== Anim 1 ==== */
 .anim-1 p {
   text-align: center;
   font-size: 24pt;
   margin: 64px 0px;
+}
+
+footer {
+  height: 64px;  background-color: var(--yellow);
 }
