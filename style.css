@@ -218,7 +218,7 @@ p.lookup {
   }
   header p {
     padding: 0px 16px;
-    margin-top: 16px;
+    margin-top: 32px;
     font-size: 1.3rem;
   }
 
@@ -237,7 +237,6 @@ p.lookup {
     margin-top: 32px;
   }
   
-
   .book-container img {
     width: 200px;
   }
@@ -246,6 +245,15 @@ p.lookup {
   }
   .book-container:not(:last-child) div {
     margin-bottom: 32px;
+  }
+  
+  strong {
+    font-size: 2.8rem;
+    -webkit-text-stroke-width: 2px;
+  }
+
+  p.lookup {
+    font-size: 2.2rem;
   }
 }
 

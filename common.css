@@ -21,7 +21,8 @@
   width: 1080px;
   height: 680px;
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 80vh;
+  margin-top: -32px;
 }
 
 
@@ -106,14 +107,51 @@ div.text-box p:last-child {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
-  div.text-box {}
-}
-
-/* ANIM BOX */
-
 .anim .description {
   text-align: center;
   font-size: 2rem;
   margin: 16px 0px 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    height: 200px;
+  }
+
+  .heading span {
+    font-size: 2rem;
+  }
+
+  .heading h2 {
+    font-size: 3rem;
+  }
+
+  .topic-box h3 {
+    font-size: 2.2rem;
+  }
+  
+  div.text-box p {
+    margin: 32px 0px;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  div.text-box {
+    height: auto;
+  }
+  
+  .topic-box {
+    height: auto;
+  }
+
+  .topic-box .content {
+    height: auto;
+    padding-top: calc(24px + 32px);
+    padding-bottom: 24px;
+  }
+
+  .topic-box .content p {
+    font-size: 1.4rem;
+    margin: 24px 0px;
+  }
 }

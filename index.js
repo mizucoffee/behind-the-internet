@@ -59,7 +59,7 @@ function animate(target, trigger, start, end, anim) {
       trigger: trigger,
       start: `${start} center`,
       end: `${end} center`,
-      markers: true,
+      markers: debug,
       scrub: true,
       toggleActions: "play none none reverse"
     },
@@ -73,7 +73,7 @@ function fadein(target, trigger, start, end) {
       trigger: trigger,
       start: `${start} center`,
       end: `${end} center`,
-      markers: true,
+      markers: debug,
       scrub: true,
       toggleActions: "play none none reverse"
     },
@@ -87,7 +87,7 @@ function fadeout(target, trigger, start, end) {
       trigger: trigger,
       start: `${start} center`,
       end: `${end} center`,
-      markers: true,
+      markers: debug,
       scrub: true,
       toggleActions: "play none none reverse"
     },
