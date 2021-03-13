@@ -55,7 +55,6 @@ section:nth-child(even) .stripe {
 
 .page {
   height: 100vh;
-/*  width: 100vw;*/
 }
 
 .flex {
@@ -84,7 +83,7 @@ strong {
 }
 
 .onepage {
-  height: calc(100vh - 256px - 92px);
+  min-height: calc(100vh - 256px - 92px);
   padding-bottom: 92px;
 }
 
@@ -129,14 +128,13 @@ header > img {
 }
 
 header > .cloud1 {
-  top: -5vh;
+  top: -30vh;
   right: 0px;
   width: 50vmax;
 }
 
 header > .cloud2 {
-  bottom: -9vh;
-  transform: rotate(180deg);
+  bottom: -20vh;
   left: 0px;
   width: 50vmax;
 }
@@ -180,6 +178,34 @@ footer {
   font-size: 2rem;
 }
 
+.domain1 p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p.lookup {
+  margin-top: 64px;
+  font-size: 2.5rem;
+  line-height:4rem;
+}
+
+.balloon {
+  background-color: var(--white);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  border: solid 6px var(--gray);
+  border-radius: 24px;
+  padding: 32px 24px;
+  margin: 0px 32px;
+
+  filter: drop-shadow(10px 10px 0px var(--gray));
+}
+
+.balloon p {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
 @media screen and (max-width: 768px) {
   /* 768pxまでの幅の場合に適応される */
   html {
@@ -195,14 +221,65 @@ footer {
     margin-top: 16px;
     font-size: 1.3rem;
   }
+
+  .balloon {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 32px 16px;
+  }
+
+  .balloon p {
+    line-height: 2.4rem;
+  }
+  
+  .portrait .mizu {
+    width: 200px;
+    margin-top: 32px;
+  }
+  
+
+  .book-container img {
+    width: 200px;
+  }
+  .book-container div {
+    margin-top: 12px;
+  }
+  .book-container:not(:last-child) div {
+    margin-bottom: 32px;
+  }
 }
 
-.domain1 p {
-  font-size: 24pt;
-  text-align: center;
+.bg-devices {
+  background-image: url(img/devices.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-p.lookup {
-  margin-top: 64px;
-  font-size: 28pt;
+.bg-pcs {
+  background-image: url(img/pcs.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-ipaddr {
+  background-image: url(img/ipaddr.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-mail {
+  background-image: url(img/mail.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-tech {
+  background-image: url(img/technology.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

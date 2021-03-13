@@ -20,8 +20,8 @@
 .topic-box {
   width: 1080px;
   height: 680px;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 90vw;
+  max-height: 90vh;
 }
 
 
@@ -30,7 +30,7 @@
   background-color: var(--white);
   color: var(--gray);
   border: solid 6px var(--gray);
-  filter: drop-shadow(4px 4px 0px var(--gray));
+  filter: drop-shadow(5px 5px 0px var(--gray));
   width: 85%;
   padding: 16px;
   margin-top: -32px;
@@ -77,8 +77,8 @@
 div.text-box {
   width: 1080px;
   height: 680px;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 90vw;
+  max-height: 85vh;
 
   position: relative;
   background-color: var(--white);
