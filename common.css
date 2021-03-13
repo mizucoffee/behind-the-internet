@@ -58,6 +58,7 @@
   font-size: 1.8rem;
   margin: 48px 0px;
 }
+
 .topic-box p:first-child {
   margin-top: 16px;
 }
@@ -66,15 +67,12 @@
   margin-bottom: 0;
 }
 
-
 .topic-box img {
   max-width: 100%;
   max-height: 50vh;
 }
 
-
 /* TEXT BOX */
-
 
 div.text-box {
   width: 1080px;
@@ -108,8 +106,14 @@ div.text-box p:last-child {
   margin-bottom: 0;
 }
 
-
-
 @media screen and (max-width: 768px) {
   div.text-box {}
+}
+
+/* ANIM BOX */
+
+.anim .description {
+  text-align: center;
+  font-size: 2rem;
+  margin: 16px 0px 64px;
 }

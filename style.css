@@ -5,6 +5,10 @@ header {
   background-color: var(--blue);
 }
 
+p {
+  padding: 0px 16px;
+}
+
 section:nth-child(odd) {
   background-color: var(--yellow);
 }
@@ -66,7 +70,7 @@ section:nth-child(even) .stripe {
 strong {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 900;
-  color: var(--white);
+  color: var(--white) !important;
   font-size: 3rem;
   display: inline-block;
   margin: 0px 8px;
@@ -158,11 +162,6 @@ header p {
 /* ===== Header ===== */
 
 /* ===== Anim 1 ==== */
-.anim-1 p {
-  text-align: center;
-  font-size: 2rem;
-  margin: 64px 0px;
-}
 
 footer {
   height: 64px;  background-color: var(--yellow);
@@ -196,4 +195,14 @@ footer {
     margin-top: 16px;
     font-size: 1.3rem;
   }
+}
+
+.domain1 p {
+  font-size: 24pt;
+  text-align: center;
+}
+
+p.lookup {
+  margin-top: 64px;
+  font-size: 28pt;
 }
