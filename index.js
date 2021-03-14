@@ -5,7 +5,7 @@ show('#pop1', "#anim-1-content", "60%", "80%")
 show('#pop2', "#anim-1-content", "100%", "120%")
 
 pinPage('#anim-2', '200%')
-animate('#packet1', "#anim-2-content", "70%", "130%", {left: 'calc(100% - 350px)'})
+animate('#packet1', "#anim-2-content", "70%", "130%", {right: '0'})
 fadeout('#packet1', "#anim-2-content", "140%", "170%")
 fadein('#packet2', "#anim-2-content", "190%", "220%")
 animate('#packet2', "#anim-2-content", "230%", "290%", {left: '0px'})

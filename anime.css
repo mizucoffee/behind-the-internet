@@ -72,7 +72,7 @@
 }
 
 .packet-anim #packet1 {
-  left: 0;
+  right: calc(100% - 350px);
   top: 0;
 }
 
@@ -80,6 +80,15 @@
   left: calc(100% - 350px);
   bottom: 0;
   opacity: 0;
+}
+
+.packet-anim .space-50 {
+  width: 50vw;
+}
+
+.packet-anim .packet-box{
+  width: 50vw;
+  position: absolute;
 }
 
 /* DNS */
@@ -160,4 +169,28 @@
   left: calc(100% - 350px);
   bottom: 0;
   opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .packet-anim {
+    margin-top: 128px;
+  }
+  .packet-anim .packet {
+    width: 260px;
+  }
+
+  .packet-anim #packet1 {
+    right: calc(100% - 260px);
+  }
+
+  .packet-anim #packet2 {
+    left: calc(100% - 260px);
+  }
+  .packet-anim .packet-box{
+    width: 100vw;
+    height: 70vw;
+  }
+  .dns-anim .dns {
+    width: 220px;
+  }
 }
