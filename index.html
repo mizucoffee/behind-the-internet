@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <meta charset="UTF-8">
   <title>Behind the internet</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:url" content="https://www.behind-the-internet.online/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Behind the internet" />
+  <meta property="og:description" content="インターネットがどうして使えるのか考えたことはありますか？何も知らなくても使えるけど、知っているともっと面白い。パソコンやスマホが何をしているのか少しだけ覗いて行きませんか？" />
+  <meta property="og:site_name" content="Behind the internet" />
+  <meta property="og:image" content="/img/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@lit_mizu" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&family=RocknRoll+One&display=swap" rel="stylesheet">
+  <link rel="icon" href="/img/favicon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="anime.css">
@@ -114,8 +123,8 @@
     <div class="page anim flex" id="anim-2">
       <div id="anim-2-content">
         <p class="description">コンピュータ同士のやりとりでは<strong>パケット</strong>という<br>
-        手紙のような形でデータを送るよ。<br>
-        パケットにはメッセージの他に、宛先や自分の住所も載っているんだ。</p>
+          手紙のような形でデータを送るよ。<br>
+          パケットにはメッセージの他に、宛先や自分の住所も載っているんだ。</p>
         <div class="flex packet-anim">
           <img src="img/sph.png" class="illust">
           <div class="center flex">
@@ -132,7 +141,7 @@
             <div class="line"></div>
           </div>
           <img src="img/pc.png" class="illust">
-          
+
         </div>
       </div>
     </div>
@@ -273,7 +282,9 @@
     </div>
     <div class="onepage flex">
       <div class="book-container">
-        <img src="/img/book-3min.jpg" class="shadow10px">
+        <a href="https://www.amazon.co.jp/dp/4774143731">
+          <img src="/img/book-3min.jpg" class="shadow10px">
+        </a>
         <div>
           図解でわかりやすくネットワークの<br>
           知識をつけられる本。<br>
@@ -282,7 +293,9 @@
         </div>
       </div>
       <div class="book-container">
-        <img src="/img/book-tcpip.jpg" class="shadow10px">
+        <a href="https://www.amazon.co.jp/dp/4274224473">
+          <img src="/img/book-tcpip.jpg" class="shadow10px">
+        </a>
         <div>
           近年使われているネットワークに<br>
           ついて一通り書かれている本<br>
