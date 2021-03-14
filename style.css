@@ -197,14 +197,19 @@ p.lookup {
   border-radius: 24px;
   padding: 32px 24px;
   margin: 0px 32px;
+  max-width: 800px;
 
   filter: drop-shadow(10px 10px 0px var(--gray));
 }
 
 .balloon p {
   font-family: 'Noto Sans JP', sans-serif;
+  margin: 16px 0px;
 }
 
+.balloon p:first-child, .balloon p:last-child {
+  margin: 0px;
+}
 
 @media screen and (max-width: 768px) {
   /* 768pxまでの幅の場合に適応される */

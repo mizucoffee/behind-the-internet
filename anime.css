@@ -51,7 +51,7 @@
   width: 50vw;
   height: 25vw;
   max-width: 700px;
-  max-height: 350px;
+  max-height: 260px;
   position: relative;
 }
 
@@ -84,6 +84,7 @@
 
 .packet-anim .space-50 {
   width: 50vw;
+  max-width: 700px;
 }
 
 .packet-anim .packet-box{
