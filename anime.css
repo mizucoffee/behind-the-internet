@@ -82,7 +82,7 @@
   opacity: 0;
 }
 
-.packet-anim .space-50 {
+.space-50 {
   width: 50vw;
   max-width: 700px;
 }
@@ -110,9 +110,9 @@
 
 .dns-anim .center {
   width: 50vw;
-  height: 25vw;
+  height: 22vw;
   max-width: 700px;
-  max-height: 350px;
+  max-height: 300px;
   position: relative;
 }
 
@@ -121,9 +121,10 @@
   height: 2px;
   background-color: var(--gray);
   transform: rotate(-12deg);
-  position: absolute;
-  margin-top: -21%;
   z-index: -1;
+  transform-origin: center left;
+  top: 50%;
+  position: absolute;
 }
 
 .dns-anim .line2 {
@@ -131,9 +132,10 @@
   height: 2px;
   background-color: var(--gray);
   transform: rotate(12deg);
-  position: absolute;
-  margin-top: 21%;
   z-index: -1;
+  transform-origin: center left;
+  top: 50%;
+  position: absolute;
 }
 
 .dns-anim .dns {
@@ -150,7 +152,7 @@
 }
 
 .dns-anim #dns1 {
-  left: 0;
+  right: calc(100% - 350px);
   top: calc(50% - 55px);
 }
 
@@ -161,7 +163,7 @@
 }
 
 .dns-anim #dns3 {
-  left: 0;
+  right: calc(100% - 350px);
   bottom: calc(50% - 55px);
   opacity: 0;
 }
@@ -170,6 +172,28 @@
   left: calc(100% - 350px);
   bottom: 0;
   opacity: 0;
+}
+
+.dns-anim-box {
+  height: 22vw;
+  max-height: 300px;
+  position: relative;
+}
+
+.dns-anim .dns-box-1 {
+  position: absolute;
+}
+.dns-anim .dns-box-2 {
+  position: absolute;
+}
+
+.stack {
+  position: relative;
+}
+.stack > *:not(.space-50) {
+  position: absolute !important;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -193,5 +217,35 @@
   }
   .dns-anim .dns {
     width: 220px;
+  }
+  .dns-anim .stack {
+    width: 100vw;
+  }
+  .dns-anim .dns-box-1 {
+    width: 100vw;
+    margin-top: -200px;
+  }
+  .dns-anim .dns-box-2 {
+    width: 100vw;
+    margin-top: 200px;
+  }
+  .dns-anim #dns1 {
+    right: calc(100% - 220px);
+    top: 0;
+  }
+  .dns-anim #dns2 {
+    left: calc(100% - 220px);
+    top: calc(50% - 55px);
+  }
+  .dns-anim #dns3 {
+    right: calc(100% - 220px);
+    bottom: 0;
+  }
+  .dns-anim #dns4 {
+    left: calc(100% - 220px);
+    bottom: calc(50% - 55px);
+  }
+  #anim-3-content p.description {
+    margin-bottom: 128px;
   }
 }
